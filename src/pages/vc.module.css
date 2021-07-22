@@ -1,0 +1,15 @@
+.contentStyle {
+  margin: 40px 40px;
+  display: block;
+  float:left;
+}
+
+h2 {
+ padding: 5px;
+}
+
+.linkSpan {
+  margin-Top: "30px";
+  padding-Bottom: "30px";
+  display: block;
+}
