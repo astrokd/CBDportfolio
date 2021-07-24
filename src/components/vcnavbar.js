@@ -5,10 +5,13 @@ import { Link } from 'gatsby'
 import { topnav, navlink, active } from './vcnavbar.module.css'
 
 const Start = ({ children, linkpath, linkstyle }) => {
+  const polywidth = 200
+  const polywidthedge = polywidth-25
+  const polypoints = `0,0 0,50 ${polywidthedge},50 ${polywidth},25 ${polywidthedge},0` 
   return (
     <Link className={linkstyle} to={linkpath}>
-      <svg width="200px" height="50px" viewBox="0 0 200 50">
-        <polygon points="0,0 0,50 175,50 200,25 175,0" />
+      <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+        <polygon points={polypoints} />
         <text x="50%" y="60%" text-anchor="middle">{ children }</text>
       </svg>
     </Link>
@@ -16,10 +19,13 @@ const Start = ({ children, linkpath, linkstyle }) => {
 }
 
 const Arrow = ({ children, linkpath, linkstyle }) => {
+  const polywidth = 200
+  const polywidthedge = polywidth-25
+  const polypoints = `0,0 25,25 0,50 ${polywidthedge},50 ${polywidth},25 ${polywidthedge},0` 
   return (
     <Link className={linkstyle} to={linkpath}>
-      <svg width="200px" height="50px" viewBox="0 0 200 50">
-        <polygon points="0,0 25,25 0,50 175,50 200,25 175,0" />
+      <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+        <polygon points={polypoints} />
         <text x="50%" y="60%" text-anchor="middle">{ children }</text>
       </svg>
     </Link>
