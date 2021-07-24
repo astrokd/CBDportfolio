@@ -1,5 +1,5 @@
 :root {
-  --menu-font-size: 17px;
+  --menu-font-size: 16px;
 }
 
 /* Add a black background color to the top navigation */
@@ -7,24 +7,47 @@
   width: 80%;
   background-color: #333;
   overflow: visible;
-  margin: 0 0 0 0;
+  margin: auto;
   padding: 0;
   display: block;
 }
 
-.navlink, .active {
+.navlink {
   float: left;
   color: black;
   text-align: center;
+  width: 170px;
+  margin: auto;
+  /* height: 50px; */
+  /* position: relative; */
+}
+
+.active {
+  float: left;
+  color: black;
+  text-align: center;
+  width: 170px;
+  /* height: 30px; */
+  margin: auto;
+  /* position: relative; */
 }
 
 /* Style the links inside the navigation bar */
 .navlink, .active {
   color: #f2f2f2;
   text-align: center;
-  margin: 0 -21px 0 0;
+  margin: 0 -16px 0 0;
   text-decoration: none;
   font-size: var(--menu-font-size);
+}
+
+.navlink svg, .navlink svg {
+  width: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
 }
 
 /* Change the color of links on hover */
@@ -61,3 +84,4 @@
   fill: #ddd;
   stroke: #ddd;
 }
+
