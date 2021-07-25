@@ -13,3 +13,11 @@ h2 {
   padding-Bottom: "30px";
   display: block;
 }
+
+.imgStyles {
+  display: inline;
+  margin: 15px 15px;
+  width: 20%;
+  border-radius: 8px;
+  float: right;
+}

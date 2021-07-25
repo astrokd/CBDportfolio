@@ -8,6 +8,7 @@
   margin-Top: 0;
   margin-Bottom: 32px;
   max-Width: 320px;
+  display: inline-block;
 }
 .subHeadingStyles {
   margin: 12px;
@@ -16,6 +17,22 @@
   margin-Bottom: 32px;
   display: block;
   float:left;
+}
+
+.contactStyle {
+  display: inline;
+}
+
+.linkStyles {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+.linkStyles a {
+  display: block;
+  margin: 3px 3px;
 }
 
 /* const headingAccentStyles = {

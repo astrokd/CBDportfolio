@@ -32,42 +32,6 @@ const Arrow = ({ children, linkpath, linkstyle }) => {
   )
 }
 
-// Space Resources Value Chain Data
-const srvc = [
-  {
-    pageName: "vc0Prospect",
-    vcName: "Prospect"
-  },
-  {
-    pageName: "vc1Explore",
-    vcName: "Explore"
-  },
-  {
-    pageName: "vc2EstFeasibility",
-    vcName: "Establish Feasibility"
-  },
-  {
-    pageName: "vc3Mine",
-    vcName: "Mine"
-  },
-  {
-    pageName: "vc4Process",
-    vcName: "Process"
-  },
-  {
-    pageName: "vc5Manufacturing",
-    vcName: "Manufacturing"
-  },
-  {
-    pageName: "vc6Distribution",
-    vcName: "Distribution"
-  },
-  {
-    pageName: "vc7Sell",
-    vcName: "Sell"
-  }
-]
-
 const VCNavBar = ({ activelink }) => {
   if (activelink === "Home") {
     return (
@@ -193,6 +157,18 @@ const VCNavBar = ({ activelink }) => {
         <Arrow linkpath="/vc6Distribution" linkstyle={navlink}>Distribution</Arrow>
         <Arrow linkpath="/vc7Sell" linkstyle={active}>Sell</Arrow>
       </div>
+      )
+  }
+  if (activelink === "Bio") {
+    return (
+      <>
+      </>
+      )
+  }
+  if (activelink === "Pub") {
+    return (
+      <>
+      </>
       )
   }
 }

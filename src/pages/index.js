@@ -2,7 +2,7 @@ import * as React from "react"
 import VCLayout from '../components/vclayout'
 
 // styles
-import { linkSpan, contentStyle } from './vc.module.css'
+import { contentStyle } from './vc.module.css'
 
 // markup
 const IndexPage = () => {
