@@ -1,56 +1,123 @@
 :root {
-  --menu-font-size: 16px;
+  --menu-font-size: 14px;
+  --menu-margin-overlap: 0px;
+  --menu-margin-overlapB: -25%;
+  --menu-button-width: 140px;
+  --menu-svg-left: 100px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  width: 80%;
-  background-color: #333;
+  width: 90%;
+  height: 65px;
+  /* background-color: #333; */
   overflow: visible;
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
   display: block;
-}
-
-.navlink {
-  float: left;
-  color: black;
+  clear:both;
+  /* border: 1px solid red; */
   text-align: center;
-  width: 170px;
-  margin: auto;
-  /* height: 50px; */
-  /* position: relative; */
-}
-
-.active {
-  float: left;
-  color: black;
-  text-align: center;
-  width: 170px;
-  /* height: 30px; */
-  margin: auto;
-  /* position: relative; */
+  align-content: center;
 }
 
 /* Style the links inside the navigation bar */
 .navlink, .active {
   color: #f2f2f2;
   text-align: center;
-  margin: 0 -16px 0 0;
+  vertical-align: middle;
+  margin: 0 0;
   text-decoration: none;
   font-size: var(--menu-font-size);
+  float: left;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  /* width: var(--menu-button-width); */
+  /* width: 80px; */
+  /* border: 3px dotted #0088dd; */
 }
 
-.navlink svg, .navlink svg {
-  width: 100%;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  
+.navlink {
+  width: 50px;
+}
+
+.active {
+  width: var(--menu-button-width);
+  border-top: 3px solid rgb(50, 50, 230);
+  border-bottom: 3px solid rgb(50, 50, 230);
+  border-left: 5px solid rgb(50, 50, 230);
+  margin: 0 21px;
+  height: 44px;
+}
+
+.navlink .linktext {
+  display: none;
+}
+
+.navlink .EFlinktext {
+  display: none;
+}
+
+.navlink svg {
+  position: relative;
+  /* left: var(--menu-svg-left); */
+  left: 10px;
+  width: 50px;
+  height: 46px;
+  top: 3px;
+}
+
+.active svg {
+  position: relative;
+  left: var(--menu-svg-left);
+  width: 50px;
+  height: 50px;
+  top: -3px;
+}
+
+.active .linktext {
+  position: relative;
+  margin: 0;
+  width: 90px;
+  top: -25px;
+  left: -50px;
+  color: #313131;
+  text-align: center;
+  /* vertical-align: -webkit-baseline-middle; */
+  word-wrap: normal;
+  z-index: 100;
+  display: inline;
+}
+
+.active .EFlinktext {
+  position: relative;
+  margin: 0;
+  width: 30px;
+  top: -30px;
+  left: -30px;
+  color: #313131;
+  text-align: center;
+  /* vertical-align: -webkit-baseline-middle; */
+  word-wrap: normal;
+  z-index: 100;
+  display: unset;
 }
 
 /* Change the color of links on hover */
+.navlink:hover {
+  background-color: #ddd;
+}
+
+.navlink:hover .linktext {
+  color: black;
+  display: inline;
+}
+
+.navlink:hover .EFlinktext {
+  color: black;
+  display: inline;
+}
+
 .navlink:hover polygon {
   background-color: #ddd;
   fill: #ddd;
@@ -58,7 +125,6 @@
 }
 
 .navlink:hover text{
-  background-color: #ddd;
   fill: black;
   stroke: black;
   color: black;
@@ -81,7 +147,7 @@
 }
 
 .navlink text {
-  fill: #ddd;
-  stroke: #ddd;
+  fill: rgb(180, 180, 180);
+  stroke: rgb(180, 180, 180);
 }
 

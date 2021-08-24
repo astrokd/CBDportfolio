@@ -18,6 +18,12 @@
   display: block;
   float:left;
 }
+.footerStyles {
+  margin-Bottom: 5px;
+  display: block;
+  float:left;
+  clear: both;
+}
 
 .contactStyle {
   display: inline;
