@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import VCNavBar from './vcnavbar'
 
 // styles
-import { pageStyles, headingStyles, paragraphStyles, linkStyles, contactStyle, footerStyles } from './vclayout.module.css'
+import { pageStyles, headingStyles, paragraphStyles, linkStyles, navStyle, footerStyles } from './vclayout.module.css'
 
 const Header = () => {
   return (
@@ -66,13 +66,11 @@ const VCLayout = ({ children, activelink }) => {
     <main className={pageStyles}>
       <title>{activelink} Page</title>
         <Header></Header>
-      <div className={pageStyles}>
-        <div>
+      <div className={navStyle}>
           <VCNavBar activelink={activelink}></VCNavBar>
-        </div>
-        <div className={paragraphStyles}>
+      </div>
+      <div className={paragraphStyles}>
           { children }
-        </div>
       </div>
       <Footer></Footer>
     </main>

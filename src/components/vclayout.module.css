@@ -2,12 +2,18 @@
 .pageStyles {
   color: "#232129";
   padding: 10px;
-  font-Family: "-apple-system, Roboto, sans-serif, serif";
+  /* font-Family: "-apple-system, Roboto, sans-serif"; */
 }
+
+.navStyle {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .headingStyles {
   margin-Top: 0;
   margin-Bottom: 32px;
-  max-Width: 320px;
+  max-Width: 420px;
   display: inline-block;
 }
 .subHeadingStyles {
