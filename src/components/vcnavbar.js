@@ -10,11 +10,11 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext }) => {
   const polypoints = `0,0 15,25 0,50 ${polywidthedge},50 ${polywidth},25 ${polywidthedge},0` 
   return (
     <Link className={linkstyle} to={linkpath}>
+      <p className={linktext}>{ children }</p>
       <svg viewBox="0 0 50 50" preserveAspectRatio="none">
         <polygon points={polypoints} />
         <text x="55%" y="60%" text-anchor="middle">{ abbr }</text>
       </svg>
-      <p className={linktext}>{ children }</p>
     </Link>
   )
 }
