@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from 'gatsby'
 
-// styles
+// styles     <polyline points="0,0 15,25 0.50" />
 import { topnav, navlink, active, linktext, EFlinktext } from './vcnavbar.module.css'
 
 const Chevron = ({ children, linkpath, linkstyle, abbr, linktext }) => {
