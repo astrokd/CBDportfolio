@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in-out;
   /* width: 90%; */
   /* background-color: #333; */
   /* overflow: visible; */
@@ -45,7 +46,7 @@
 .navlink {
   width: 50px;
   z-index: 10;
-  transition: width 0.2s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
 }
 
 .active {
@@ -56,7 +57,7 @@
   margin-right: 26px;
   height: 50px;
   z-index: 100;
-  transition: width 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   /* border-left: 5px solid rgb(50, 50, 230); */
   /* margin: 0 auto; */
   /* display: inline; */
@@ -64,12 +65,12 @@
 
 .navlink .linktext {
   display: none;
-  transition: width 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navlink .EFlinktext {
   display: none;
-  transition: width 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* Style the SVG and SVG elements inside the link */
@@ -77,7 +78,8 @@
 .navlink svg {
   width: 50px;
   height: 50px;
-  transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* transition: left 0.5s ease-in-out, top 0.5s ease-in-out; */
   /* transition: width 0.5s ease-in-out, height 0.5s ease-in-out; */
   /* position: relative; */
   /* left: 30px; */
@@ -98,7 +100,7 @@
 .navlink polygon {
   fill: #333;
   stroke: #333;
-  transition: fill 1s ease-in-out, stroke 1s ease-in-out;
+  transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
 .navlink text {
