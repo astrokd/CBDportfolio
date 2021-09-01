@@ -1,7 +1,6 @@
 import * as React from "react"
-import PubLayout from '../components/publayout'
+import Layout from '../components/layout'
 import { graphql } from "gatsby"
-// import { node } from "webpack";
 
 // styles
 // import { contentStyle } from './vc.module.css'
@@ -28,7 +27,7 @@ const PubPage = ({ data }) => {
   const pubNodes = data.allCbdCitationsCsv.nodes;
 
   return (
-    <PubLayout>
+    <Layout title="Publications">
     <h2>Selected Publications</h2>
     <p>View all publication on <a href="https://scholar.google.com/citations?hl=en&user=KNg4Th0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer noopener">Google Scholar</a></p>
     <ul>
@@ -41,7 +40,7 @@ const PubPage = ({ data }) => {
       ))}
     </ul>
       <p>View all publication on <a href="https://scholar.google.com/citations?hl=en&user=KNg4Th0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer noopener">Google Scholar</a></p>
-  </PubLayout>
+  </Layout>
   )
 }
 
