@@ -146,18 +146,6 @@ const VCNavBar = ({ activelink }) => {
       </div>
       )
   }
-  if (activelink === "Bio") {
-    return (
-      <>
-      </>
-      )
-  }
-  if (activelink === "Pub") {
-    return (
-      <>
-      </>
-      )
-  }
 }
 
 export default VCNavBar

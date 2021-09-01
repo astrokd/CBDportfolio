@@ -14,12 +14,6 @@
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  /* width: 90%; */
-  /* background-color: #333; */
-  /* overflow: visible; */
-  /* margin: 0 auto; */
-  /* border: 1px solid red; */
-  /* text-align: center; */
 }
 
 /* Style the links inside the navigation bar */
@@ -30,17 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: #f2f2f2; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* margin: 0 0; */
-  /* float: left; */
-  /* color: black; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* width: var(--menu-button-width); */
-  /* width: 80px; */
-  /* border: 3px dotted #0088dd; */
 }
 
 .navlink {
@@ -58,9 +41,6 @@
   height: 50px;
   z-index: 100;
   transition: all 0.5s ease-in-out;
-  /* border-left: 5px solid rgb(50, 50, 230); */
-  /* margin: 0 auto; */
-  /* display: inline; */
 }
 
 .navlink .linktext {
@@ -79,12 +59,6 @@
   width: 50px;
   height: 50px;
   transition: all 0.5s ease-in-out;
-  /* transition: left 0.5s ease-in-out, top 0.5s ease-in-out; */
-  /* transition: width 0.5s ease-in-out, height 0.5s ease-in-out; */
-  /* position: relative; */
-  /* left: 30px; */
-  /* top: 1px; */
-  /* z-index: 10; */
 }
 
 .active svg {
@@ -123,11 +97,6 @@
   display: inline;
   float: left;
   transition: width 1s ease-in-out;
-  /* margin: 0 auto; */
-  /* top: -23px; */
-  /* text-align: center; */
-  /* vertical-align: -webkit-baseline-middle; */
-  /* overflow: auto; */
 }
 
 .active .EFlinktext {
@@ -141,12 +110,6 @@
   text-align: left;
   z-index: 100;
   float: left;
-  /* margin: 0 auto; */
-  /* height: 30px; */
-  /* vertical-align: -webkit-baseline-middle; */
-  /* word-wrap: normal; */
-  /* overflow: auto; */
-  /* display: block; */
 }
 
 /* Change links on hover */
@@ -186,7 +149,6 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  /* top: -6px;  */
   left: 20px;
   color: #313131;
   text-align: left;
@@ -199,14 +161,12 @@
   left: 30px;
   width: 55px;
   height: 55px;
-  /* top: -3.5px; */
   z-index: 100;
 }
 
 .navlink:hover polygon {
   fill: #ddd;
   stroke: #ddd;
-  /* background-color: #ddd; */
 }
 
 .navlink:hover text{

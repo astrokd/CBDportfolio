@@ -5,10 +5,10 @@ import Footer from './footer'
 // styles
 import { pageStyles, paragraphStyles } from './vclayout.module.css'
 
-const PubLayout = ({ children }) => {
+const Layout = ({ children, title }) => {
     return (
     <main className={pageStyles}>
-        <title>Publications Page</title>
+        <title>{ title }</title>
         <Header></Header>
         <div className={paragraphStyles}>
             { children }
@@ -18,4 +18,4 @@ const PubLayout = ({ children }) => {
     )
 }
 
-export default PubLayout
+export default Layout

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import VCLayout from '../components/vclayout'
+import Layout from '../components/layout'
 
 // styles
 import { contentStyle, imgStyles } from './vc.module.css'
@@ -15,7 +15,7 @@ const MugShot = () => {
 const BioPage = () => {
   return (
     <>
-    <VCLayout activelink="Bio">
+    <Layout title="Bio">
       <p className={contentStyle}>
       <MugShot></MugShot>
       Dr. Dreyer’s research emphasis is the application of optical diagnostics for the study of challenging environments. Areas of interest include space exploration, combustion science, energy conversion systems, and environmental sensing.
@@ -26,7 +26,7 @@ const BioPage = () => {
       <br></br>
       Recent research projects include laser spectroscopy techniques for use in space exploration, laser diagnostics used to measure flame radicals and stable species, and a device for making rock thin sections for NASA.
       </p>
-    </VCLayout>
+    </Layout>
     </>
   )
 }
