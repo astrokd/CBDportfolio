@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Style the links inside the navigation bar */
@@ -40,7 +40,7 @@
   margin-right: 26px;
   height: 50px;
   z-index: 100;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navlink .linktext {
@@ -68,7 +68,7 @@
   top: 0px;
   left: 30px;
   z-index: 100;
-  transition: width 2s ease-in-out, height 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navlink polygon {
@@ -96,7 +96,7 @@
   z-index: 100;
   display: inline;
   float: left;
-  transition: width 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .active .EFlinktext {
@@ -104,12 +104,12 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  top: -6px; 
   left: 20px;
   color: #313131;
   text-align: left;
   z-index: 100;
   float: left;
+  transition: all 1s ease-in-out;
 }
 
 /* Change links on hover */
@@ -184,4 +184,11 @@
 .active text, .navlink text:active{
   fill: #ddd;
   stroke: #ddd;
+}
+
+.navlink:focus{
+  fill: #ddd;
+  stroke: #ddd;
+  color: #ddd;
+  background-color: aqua;
 }
