@@ -13,7 +13,7 @@
 .headingStyles {
   margin-Top: 0;
   margin-Bottom: 32px;
-  max-Width: 420px;
+  max-Width: 520px;
   display: inline-block;
 }
 .subHeadingStyles {
@@ -37,7 +37,7 @@
 
 .linkStyles {
   float: right;
-  margin-right: 20px;
+  margin-right: 18px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -54,8 +54,8 @@
   font: bold 12px Verdana;
   color: #333;
   background-color: #fff;
-  transition-property: color, background-color;
-  transition-duration: 0.8s;
+  transition-property: all;
+  transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
@@ -65,3 +65,39 @@
   color: #fff;
   background-color: #333;
 }
+
+
+@media all and (max-width: 680px) { 
+  .linkStyles {
+    margin-right: 5px;
+  }
+  .aLinks {
+    width: 95px;
+    font-size: 10px;
+  }
+  .headingStyles {
+    max-Width: 320px;
+  }
+}
+/* 
+@media all and (max-width: 600px) { 
+  .linkStyles {
+    margin-right: 0px;
+    margin-top: 2px;
+  }
+  .aLinks {
+    color: transparent;
+    width: 50px;
+    height: 8px;
+    margin: 2px 1px;
+    border-radius: 18px;
+    padding: 1px 1px;
+  } 
+
+  .aLinks:hover,
+  .aLinks:focus,
+  .aLinks:active {
+    color: transparent;
+    background-color: #333;
+  }
+} */
