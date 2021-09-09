@@ -35,8 +35,9 @@
   display: inline-block;
   text-align: left;
   margin: 0 auto;
-  padding: 0 2%;
-  width: 240px;
+  padding: 0 5px;
+  width: 28%;
+  min-width: 120px;
   height: auto;
 }
 

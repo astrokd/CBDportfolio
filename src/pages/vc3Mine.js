@@ -10,14 +10,12 @@ const Mine = () => {
     <VCLayout activelink="Mine">
         <div className={contentStyle}>
             <h2 className={linkSpan}>Mine</h2>
-
-            <p>
-            Acre-breadth angstrom barleycorn candela carat clove dalton decibel em fathom fifth gal grain henry hobbet jiffy kilobase kip minim osmol palm pica pitch rod rutherford svedberg tesla tod tog tun. Barn baud carat coulomb denier dyne hertz hundredweight joule kilobase kip langley link osmol pole rod rood stack therm. Abampere arpent astronomical unit cusec footlambert magneton mecate morgan oersted photon pipe rundlet scruple stone therblig. Barn dalton darcy digit dol face-cord fresnel hundredweight peck quarter quire rutherford wey zolotnik. Ampere angstrom baud clove coulomb dram hobbet horsepower jansky jiffy kilderkin magneton mnemon mutchkin pennyweight point poise pole shake yardland. Aam cubit decibel furlong hide langley link mil oersted palm shake siemens ton watt wey yardland.
-            </p>
-
-            <h3>Seed Good Fruitful Creepeth</h3>
-            <h4>Deep Abundantly Upon Created Subdue Life Living</h4>
-            <p>Darkness it creepeth first let land. Were itself, made air lesser divide bearing blessed night fill. Have dry day Seas.</p>
+            <p> Mining in space can be defined as “Extraction of naturally occurring substances from space for utilitarian purposes.”.</p>
+            <ul>
+              <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KNg4Th0AAAAJ&citation_for_view=KNg4Th0AAAAJ:sbeIDTyQOFgC" target="_blank" rel="noreferrer noopener">Moon</a></li>
+              <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KNg4Th0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=KNg4Th0AAAAJ:RfUwGJFMQ-0C" target="_blank" rel="noreferrer noopener">Asteroid Optical Mining - working with TransAstra</a></li>
+              <li><a href="https://www.nasa.gov/feature/nasa-awards-500000-in-break-the-ice-lunar-challeng" target="_blank" rel="noreferrer noopener">Break the Ice Challenge - 2nd place team</a></li>
+            </ul>
         </div>
     </VCLayout>
   )

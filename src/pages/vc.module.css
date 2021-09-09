@@ -3,10 +3,8 @@
 }
 
 .contentStyle {
-  margin: 10px auto;
+  margin: 5px 5%;
   display: block;
-  /* float:left; */
-  /* clear: both; */
   max-width: 1000px;
   text-align: left;
 }

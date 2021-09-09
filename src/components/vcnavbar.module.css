@@ -9,6 +9,7 @@
 /* Basic Styling */
 .topnav {
   height: 65px;
+  margin-bottom: 15px;
   clear:both;
   display: flex;
   justify-content: center;
