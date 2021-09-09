@@ -2,7 +2,24 @@ import * as React from "react"
 import VCLayout from '../components/vclayout'
 
 // styles
-import { contentStyle } from './vc.module.css'
+import { contentStyle, paragraphStyles } from './vc.module.css'
+
+const ResearchAreas = () => {
+  return (
+    <div className={paragraphStyles}>
+        <h3>RESEARCH AREAS</h3>
+          <ul>
+            <li>Laser Induced Breakdown Spectroscopy for material analysis</li>
+            <li>Raman spectroscopy for combustion analysis</li>
+            <li>Maritime atmospheric characterization using laser scattering</li>
+            <li>Spectroscopy of Ionic Liquids</li>
+            <li>Surface probe for asteroid characterization</li>
+            <li>Hollow Waveguide Cavity Ringdown Spectroscopy</li>
+            <li>In Situ Automated Rock Thin Section Instrument for Planetary Science</li>
+          </ul>
+      </div>
+  )
+}
 
 // markup
 const IndexPage = () => {
@@ -19,6 +36,8 @@ const IndexPage = () => {
         The Space Resources Value Chain begins with Explore(EX), followed by Establish Feasibility(EF), Mine(MN), Process(PC), Manufacture(MF), Distribution(DS), Sell(SL).
         Select a category of the Space Resources Value Chain above to see Dr. Dreyer’s related work.
       </p>
+      <br></br>
+      <ResearchAreas></ResearchAreas>
     </VCLayout>
     </>
   )

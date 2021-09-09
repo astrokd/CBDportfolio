@@ -28,3 +28,10 @@ h2 {
   border-radius: 8px;
   float: right;
 }
+
+.paragraphStyles {
+  /* margin-Bottom: 32px; */
+  margin: auto 25px;
+  display: block;
+  clear: both;
+}

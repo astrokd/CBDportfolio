@@ -25,11 +25,22 @@
   float:left;
 }
 .footerStyles {
-  margin-Bottom: 5px;
+  margin: 0 auto;
   display: block;
-  float:left;
+  text-align: center;
   clear: both;
 }
+
+.footerSection {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 240px;
+  height: auto;
+}
+
+.footerStyles
 
 .contactStyle {
   display: inline;
