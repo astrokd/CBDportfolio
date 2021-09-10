@@ -27,22 +27,35 @@
   align-items: center;
 }
 
+#ex.navlink {
+  border-left: 3px solid #333;
+
+}
+
+#ex.active {
+  border-left: 3px solid rgb(50, 50, 230);
+
+}
+
 .navlink {
   width: 50px;
   z-index: 10;
   transition: all 0.2s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
 }
 
+
 .active {
   width: var(--menu-button-width);
   border-top: 3px solid rgb(50, 50, 230);
   border-bottom: 3px solid rgb(50, 50, 230);
+  /* border-left: 3px solid rgb(50, 50, 230); */
   margin-left: 16px;
   margin-right: 26px;
   height: 50px;
   z-index: 100;
   transition: all 1s ease-in-out;
 }
+
 
 .navlink .linktext {
   display: none;
@@ -73,6 +86,12 @@
 }
 
 .navlink polygon {
+  fill: #333;
+  stroke: #333;
+  transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+
+.navlink polyline {
   fill: #333;
   stroke: #333;
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
@@ -126,6 +145,10 @@
   z-index: 100;
   border-top: 3px solid #ddd;
   border-bottom: 3px solid #ddd;
+  /* border-left: 3px solid #ddd; */
+}
+#ex.navlink:hover {
+  border-left: 3px solid #ddd;
 }
 
 .navlink:hover .linktext {
@@ -191,5 +214,5 @@
   fill: #ddd;
   stroke: #ddd;
   color: #ddd;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
