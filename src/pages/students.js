@@ -1,9 +1,9 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 
 // styles
-import { contentStyle, imgStyles } from './vc.module.css'
+import { contentStyle } from './vc.module.css'
 
 const Student = ({ children, name, extlink, title }) => {
   return (
@@ -22,7 +22,7 @@ const StudentsPage = () => {
     <>
     <Layout title="Students">
       <h3>Students Work</h3>
-      
+
       <Student name="Student name" extlink="https://people.mines.edu/" title="student title">
         Acre-breadth angstrom barleycorn candela carat clove dalton decibel em fathom fifth gal grain henry hobbet jiffy kilobase kip minim osmol palm pica pitch rod rutherford svedberg tesla tod tog tun. Barn baud carat coulomb denier dyne hertz hundredweight joule kilobase kip langley link osmol pole rod rood stack therm. Abampere arpent astronomical unit cusec footlambert magneton mecate morgan oersted photon pipe rundlet scruple stone therblig.
       </Student>
