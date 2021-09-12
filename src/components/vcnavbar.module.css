@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 /* Style the links inside the navigation bar */
@@ -29,18 +29,41 @@
 
 #ex.navlink {
   border-left: 3px solid #333;
+}
 
+#ex.navlink .arrowsvg {
+  display: none;
+  visibility: hidden;
+}
+
+#ex.navlink .startsvg {
+  display: initial;
+  visibility: visible;
+}
+
+#ex.navlink .activelinesvg {
+  display: none;
+  visibility: hidden;
 }
 
 #ex.active {
   border-left: 3px solid rgb(50, 50, 230);
+}
 
+#ex.active .arrowsvg {
+  display: initial;
+  visibility: visible;
+}
+
+#ex.active .startsvg {
+  display: none;
+  visibility: hidden;
 }
 
 .navlink {
   width: 50px;
   z-index: 10;
-  transition: all 0.2s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
+  transition: all 0.4s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
 }
 
 
@@ -81,6 +104,25 @@
   height: 55px;
   top: 0px;
   left: 30px;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+}
+
+.startsvg {
+  display: none;
+  visibility: hidden;
+}
+.arrowsvg {
+  display: initial;
+}
+.activelinesvg {
+  display: none;
+  visibility: hidden;
+  position: relative;
+  width: 15px;
+  height: 55px;
+  top: 0px;
+  left: 50px;
   z-index: 100;
   transition: all 1s ease-in-out;
 }
@@ -151,6 +193,19 @@
   border-left: 3px solid #ddd;
 }
 
+#ex.navlink:hover .startsvg {
+  display: none;
+  visibility: hidden;
+}
+#ex.navlink:hover .arrowsvg{
+  display: initial;
+  visibility: visible;
+}
+#ex.navlink:hover .activelinesvg{
+  display: none;
+  visibility: hidden;
+}
+
 .navlink:hover .linktext {
   color: black;
   display: inline;
@@ -191,6 +246,13 @@
 .navlink:hover polygon {
   fill: #ddd;
   stroke: #ddd;
+}
+
+.navlink:hover .activelinesvg {
+  fill: #ddd;
+  stroke: #ddd;
+  display: none;
+  visibility: hidden;
 }
 
 .navlink:hover text{
