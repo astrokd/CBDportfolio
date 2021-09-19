@@ -278,3 +278,90 @@
   color: #ddd;
   /* background-color: aqua; */
 }
+
+/* For large screens */
+@media all and (min-width: 1445px) { 
+  .navlink{
+    width: var(--menu-button-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 26px;
+    height: 50px;
+    z-index: 100;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    /* border-left: 3px solid #ddd; */
+  }
+  #ex.navlink {
+    border-left: 3px solid #333;
+  }
+  
+  #ex.navlink .startsvg {
+    display: none;
+    visibility: hidden;
+  }
+  #ex.navlink .arrowsvg{
+    display: initial;
+    visibility: visible;
+  }
+  #ex.navlink .activelinesvg{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .navlink .linktext {
+    display: inline;
+    position: relative;
+    width: 90px;
+    max-width: 80px;
+    overflow-wrap: normal;
+    left: 10px;
+    color: #313131;
+    text-align: left;
+    word-wrap: normal;
+    z-index: 100;
+    float: left;
+  }
+  
+  .navlink .EFlinktext {
+    color: black;
+    display: inline;
+    position: relative;
+    width: 90px;
+    max-width: 80px;
+    overflow-wrap: normal;
+    left: 20px;
+    color: #313131;
+    text-align: left;
+    z-index: 100;
+    float: left;
+  }
+  
+  .navlink svg {
+    position: relative;
+    left: 30px;
+    width: 55px;
+    height: 55px;
+    z-index: 100;
+  }
+  
+  /* .navlink:hover polygon {
+    fill: #ddd;
+    stroke: #ddd;
+  }
+  
+  .navlink:hover .activelinesvg {
+    fill: #ddd;
+    stroke: #ddd;
+    display: none;
+    visibility: hidden;
+  } */
+  
+  .navlink text{
+    fill: #ddd;
+    stroke: #ddd;
+    color: #ddd;
+  }
+}
