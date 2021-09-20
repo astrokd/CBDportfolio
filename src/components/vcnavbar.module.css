@@ -92,16 +92,16 @@
 
 /* Style the SVG and SVG elements inside the link */
 
-.navlink svg {
+.navlink .arrowsvg, .navlink .startsvg {
   width: 50px;
   height: 50px;
   transition: all 0.5s ease-in-out;
 }
 
-.active svg {
+.active .arrowsvg, .active .startsvg {
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   top: 0px;
   left: 30px;
   z-index: 100;
@@ -120,21 +120,23 @@
   visibility: hidden;
   position: relative;
   width: 15px;
-  height: 55px;
+  height: 50px;
   top: 0px;
   left: 50px;
   z-index: 100;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* fill: #ddd; */
+  stroke: #ddd;
 }
 
 .navlink polygon {
-  fill: #333;
+  /* fill: #333; */
   stroke: #333;
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
 .navlink polyline {
-  fill: #333;
+  /* fill: #333; */
   stroke: #333;
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
@@ -235,11 +237,11 @@
   float: left;
 }
 
-.navlink:hover svg {
+.navlink:hover .arrowsvg, .navlink:hover .startsvg {
   position: relative;
   left: 30px;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   z-index: 100;
 }
 
@@ -249,22 +251,33 @@
 }
 
 .navlink:hover .activelinesvg {
-  fill: #ddd;
+  fill: transparent;
   stroke: #ddd;
-  display: none;
-  visibility: hidden;
+  display: initial;
+  visibility: visible;
+  position: relative;
+  left: -87px;
 }
 
 .navlink:hover text{
-  fill: black;
-  stroke: black;
-  color: black;
+  fill: #333;
+  stroke: #333;
+  color: #333;
 }
 
 /* Add a color to the active/current link */
 .active polygon, .navlink polygon:active{
   fill: rgb(50, 50, 230);
   stroke: rgb(50, 50, 230);
+}
+
+.active .activelinesvg {
+  fill: transparent;
+  stroke: rgb(50, 50, 230);
+  display: initial;
+  visibility: visible;
+  position: relative;
+  left: -87px;
 }
 
 .active text, .navlink text:active{
@@ -339,11 +352,11 @@
     float: left;
   }
   
-  .navlink svg {
+  .navlink .arrowsvg {
     position: relative;
     left: 30px;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     z-index: 100;
   }
   

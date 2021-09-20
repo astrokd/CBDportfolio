@@ -13,7 +13,7 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext, idname }) => {
     <Link className={linkstyle} to={linkpath} id={idname}>
       <p className={linktext}>{ children }</p>
       <svg className={activelinesvg} viewBox="0 0 15 50" preserveAspectRatio="none">
-        <polyline points="0,0 15,25 0,50" stroke-width="3" />
+        <polyline points="0,0 15,25 0,50" stroke-width="3px" />
       </svg>
       <svg className={arrowsvg} viewBox="0 0 50 50" preserveAspectRatio="none">
         {/* <polyline points="0,0 15,25 0,50" /> */}
