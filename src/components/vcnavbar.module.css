@@ -47,7 +47,7 @@
 }
 
 #ex.active {
-  border-left: 3px solid rgb(50, 50, 230);
+  border-left: 3px solid #3232e6;
 }
 
 #ex.active .arrowsvg {
@@ -63,20 +63,25 @@
 .navlink {
   width: 50px;
   z-index: 10;
-  transition: all 0.4s ease-in-out, border-top 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
+  transition: all 0.4s ease-in-out, border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out,border-left 0.3s ease-in-out;
 }
 
 
 .active {
   width: var(--menu-button-width);
-  border-top: 3px solid rgb(50, 50, 230);
-  border-bottom: 3px solid rgb(50, 50, 230);
+  border-top: 3px solid #3232e6;
+  border-bottom: 3px solid #3232e6;
   /* border-left: 3px solid rgb(50, 50, 230); */
   margin-left: 16px;
   margin-right: 26px;
   height: 50px;
   z-index: 100;
   transition: all 1s ease-in-out;
+}
+
+#ex.active .startsvg {
+  display: none;
+  visibility: hidden;
 }
 
 
@@ -124,7 +129,7 @@
   top: 0px;
   left: 50px;
   z-index: 100;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /* fill: #ddd; */
   stroke: #ddd;
 }
@@ -137,13 +142,13 @@
 
 .navlink polyline {
   /* fill: #333; */
-  stroke: #333;
+  /* stroke: #333; */
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
 .navlink text {
-  fill: rgb(180, 180, 180);
-  stroke: rgb(180, 180, 180);
+  fill: #ddd;
+  stroke: #ddd;
 }
 
 /* Style text in link */
@@ -153,7 +158,7 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 10px;
+  left: 15px;
   color: #313131;
   text-align: left;
   word-wrap: normal;
@@ -174,6 +179,11 @@
   z-index: 100;
   float: left;
   transition: all 1s ease-in-out;
+}
+
+#ex.active .activelinesvg {
+  display: none;
+  visibility: hidden;
 }
 
 /* Change links on hover */
@@ -215,7 +225,7 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 10px;
+  left: 15px;
   color: #313131;
   text-align: left;
   word-wrap: normal;
@@ -267,13 +277,13 @@
 
 /* Add a color to the active/current link */
 .active polygon, .navlink polygon:active{
-  fill: rgb(50, 50, 230);
-  stroke: rgb(50, 50, 230);
+  fill: #3232e6;
+  stroke: #3232e6;
 }
 
 .active .activelinesvg {
   fill: transparent;
-  stroke: rgb(50, 50, 230);
+  stroke: #3232e6;
   display: initial;
   visibility: visible;
   position: relative;
