@@ -23,7 +23,7 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext, idname }) => {
       <svg className={startsvg} viewBox="0 0 50 50" preserveAspectRatio="none">
         {/* <polyline points="0,0 15,25 0,50" /> */}
         <polygon points={startpolypoints} />
-        <text x="55%" y="60%" textAnchor="middle">{ abbr }</text>
+        <text x="50%" y="60%" textAnchor="middle">{ abbr }</text>
       </svg>
     </Link>
   )
