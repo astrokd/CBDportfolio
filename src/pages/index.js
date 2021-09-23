@@ -1,5 +1,6 @@
 import * as React from "react"
 import VCLayout from '../components/vclayout'
+// import { graphql } from "gatsby"
 
 // styles
 import { contentStyle, paragraphStyles } from './vc.module.css'
