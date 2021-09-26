@@ -347,7 +347,7 @@
     width: 90px;
     max-width: 80px;
     overflow-wrap: normal;
-    left: 10px;
+    left: 15px;
     color: #313131;
     text-align: left;
     word-wrap: normal;
@@ -371,10 +371,14 @@
   
   .navlink .arrowsvg {
     position: relative;
-    left: 30px;
+    left: 23px;
     width: 50px;
     height: 50px;
     z-index: 100;
+  }
+
+  #ex.navlink .arrowsvg {
+    left: 30px;
   }
   
   /* .navlink:hover polygon {
@@ -388,6 +392,15 @@
     display: none;
     visibility: hidden;
   } */
+
+  .navlink .activelinesvg {
+    fill: transparent;
+    stroke: #333;
+    display: initial;
+    visibility: visible;
+    position: relative;
+    left: -87px;
+  }
   
   .navlink text{
     fill: #ddd;
