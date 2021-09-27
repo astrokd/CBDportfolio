@@ -29,125 +29,18 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext, idname }) => {
   )
 }
 
-const VCNavBar = ({ activelink }) => {
-  if (activelink === "Home") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Prospect") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc0Prospect" linkstyle={active} linktext={linktext} abbr={'PS'}>Prospect</Chevron>
-        <Chevron linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Explore") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={active} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "EstFeasibility") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={active} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Mine") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={active} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Process") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={active} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Manufacturing") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={active} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Distribution") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={active} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
-  if (activelink === "Sell") {
-    return (
-      <div className={topnav}>
-        <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
-        <Chevron linkpath="/vc2EstFeasibility" linkstyle={navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
-        <Chevron linkpath="/vc3Mine" linkstyle={navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
-        <Chevron linkpath="/vc4Process" linkstyle={navlink} linktext={linktext} abbr={'PC'}>Process</Chevron>
-        <Chevron linkpath="/vc5Manufacturing" linkstyle={navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
-        <Chevron linkpath="/vc6Distribution" linkstyle={navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
-        <Chevron linkpath="/vc7Sell" linkstyle={active} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-      </div>
-      )
-  }
+const VCNavBar = (props) => {
+  return (
+    <div className={topnav}>
+      <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={(props.activelink === "Explore") ? active : navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
+      <Chevron linkpath="/vc2EstFeasibility" linkstyle={(props.activelink === "EstFeasibility") ? active : navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
+      <Chevron linkpath="/vc3Mine" linkstyle={(props.activelink === "Mine") ? active : navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
+      <Chevron linkpath="/vc4Process" linkstyle={(props.activelink === "Process") ? active : navlink}linktext={linktext} abbr={'PC'}>Process</Chevron>
+      <Chevron linkpath="/vc5Manufacturing" linkstyle={(props.activelink === "Manufacturing") ? active : navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
+      <Chevron linkpath="/vc6Distribution" linkstyle={(props.activelink === "Distribution") ? active : navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
+      <Chevron linkpath="/vc7Sell" linkstyle={(props.activelink === "Sell") ? active : navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
+    </div>
+  )
 }
 
 export default VCNavBar
