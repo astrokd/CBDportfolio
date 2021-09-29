@@ -1,9 +1,9 @@
 :root {
   --menu-font-size: 14px;
-  --menu-margin-overlap: 0px;
-  --menu-margin-overlapB: -25%;
   --menu-button-width: 160px;
-  --menu-svg-left: 40px;
+  --menu-arrow-left: 23px;
+  --menu-arrowline-left: -7px;
+  --menu-text-left: 5px;
 }
 
 /* Basic Styling */
@@ -108,7 +108,7 @@
   width: 50px;
   height: 50px;
   top: 0px;
-  left: 23px;
+  left: var(--menu-arrow-left);
   z-index: 100;
   transition: all 1s ease-in-out;
 }
@@ -128,7 +128,7 @@
   width: 15px;
   height: 50px;
   top: 0px;
-  left: 50px;
+  left: var(--menu-arrowline-left);
   z-index: 100;
   /* transition: all 1.3s ease-in-out; */
   /* fill: #ddd; */
@@ -160,7 +160,7 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 15px;
+  left: var(--menu-text-left);
   color: #313131;
   text-align: left;
   word-wrap: normal;
@@ -234,10 +234,10 @@
   overflow-wrap: normal;
   left: 15px;
   color: #313131;
-  text-align: left;
+  text-align: center;
   word-wrap: normal;
   z-index: 100;
-  float: left;
+  /* float: left; */
 }
 
 .navlink:hover .EFlinktext {
@@ -247,7 +247,7 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 20px;
+  left: 10px;
   color: #313131;
   text-align: left;
   z-index: 100;
@@ -256,7 +256,7 @@
 
 .navlink:hover .arrowsvg, .navlink:hover .startsvg {
   position: relative;
-  left: 23px;
+  left: var(--menu-arrow-left);
   width: 50px;
   height: 50px;
   z-index: 100;
@@ -273,7 +273,7 @@
   display: initial;
   visibility: visible;
   position: relative;
-  left: -87px;
+  left: var(--menu-arrowline-left);
 }
 
 .navlink:hover text{
@@ -294,7 +294,7 @@
   display: initial;
   visibility: visible;
   position: relative;
-  left: -87px;
+  left: var(--menu-arrowline-left);
 }
 
 .active text, .navlink text:active{
@@ -347,7 +347,7 @@
     width: 90px;
     max-width: 80px;
     overflow-wrap: normal;
-    left: 15px;
+    left: var(--menu-text-left);
     color: #313131;
     text-align: left;
     word-wrap: normal;
@@ -371,7 +371,7 @@
   
   .navlink .arrowsvg {
     position: relative;
-    left: 23px;
+    left: var(--menu-arrow-left);
     width: 50px;
     height: 50px;
     z-index: 100;
@@ -399,7 +399,7 @@
     display: initial;
     visibility: visible;
     position: relative;
-    left: -87px;
+    left: var(--menu-arrowline-left);
   }
   
   .navlink text{

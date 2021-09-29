@@ -11,17 +11,15 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext, idname }) => {
   const startpolypoints = `0,0 0,50 ${polywidthedge},50 ${polywidth},25 ${polywidthedge},0` 
   return (
     <Link className={linkstyle} to={linkpath} id={idname}>
-      <p className={linktext}>{ children }</p>
       <svg className={activelinesvg} viewBox="0 0 15 50" preserveAspectRatio="none">
         <polyline points="0,0 15,25 0,50" stroke-width="3px" />
       </svg>
+      <p className={linktext}>{ children }</p>
       <svg className={arrowsvg} viewBox="0 0 50 50" preserveAspectRatio="none">
-        {/* <polyline points="0,0 15,25 0,50" /> */}
         <polygon points={arrowpolypoints} />
         <text x="55%" y="60%" textAnchor="middle">{ abbr }</text>
       </svg>
       <svg className={startsvg} viewBox="0 0 50 50" preserveAspectRatio="none">
-        {/* <polyline points="0,0 15,25 0,50" /> */}
         <polygon points={startpolypoints} />
         <text x="50%" y="60%" textAnchor="middle">{ abbr }</text>
       </svg>
