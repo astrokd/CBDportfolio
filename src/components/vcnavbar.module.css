@@ -1,6 +1,7 @@
 :root {
   --menu-font-size: 14px;
   --menu-button-width: 160px;
+  --menu-button-height: 44px;
   --menu-arrow-left: 23px;
   --menu-arrowline-left: -7px;
   --menu-text-left: 5px;
@@ -25,10 +26,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: var(--menu-button-height);
 }
 
 #ex.navlink {
-  border-left: 3px solid #333;
+  border-left: 0px solid #333;
 }
 
 #ex.navlink .arrowsvg {
@@ -74,7 +76,6 @@
   /* border-left: 3px solid rgb(50, 50, 230); */
   margin-left: 16px;
   margin-right: 26px;
-  height: 50px;
   z-index: 100;
   transition: all 1s ease-in-out;
 }
@@ -201,11 +202,10 @@
   align-items: center;
   margin-left: 16px;
   margin-right: 26px;
-  height: 50px;
+  height: var(--menu-button-height);
   z-index: 100;
   border-top: 3px solid #ddd;
   border-bottom: 3px solid #ddd;
-  /* border-left: 3px solid #ddd; */
 }
 #ex.navlink:hover {
   border-left: 3px solid #ddd;
@@ -318,11 +318,9 @@
     align-items: center;
     margin-left: 16px;
     margin-right: 26px;
-    height: 50px;
     z-index: 100;
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
-    /* border-left: 3px solid #ddd; */
   }
   #ex.navlink {
     border-left: 3px solid #333;
