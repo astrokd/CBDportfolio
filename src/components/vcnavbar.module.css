@@ -2,15 +2,20 @@
   --menu-font-size: 14px;
   --menu-button-width: 160px;
   --menu-button-height: 44px;
-  --menu-arrow-left: 23px;
+  --menu-arrow-left: 22px;
+  --menu-arrow-left-ex: 31px;
   --menu-arrowline-left: -7px;
-  --menu-text-left: 5px;
+  --menu-text-left: 2px;
+  --menu-button-marginsl: 2px;
+  --menu-button-marginsr: 2px;
+  --menu-button-marginsl-active: 2px;
+  --menu-button-marginsr-active: 16px;
 }
 
 /* Basic Styling */
 .topnav {
   height: 65px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   clear:both;
   display: flex;
   justify-content: center;
@@ -22,17 +27,32 @@
 .navlink, .active {
   text-decoration: none;
   font-size: var(--menu-font-size);
-  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: var(--menu-button-height);
 }
 
-#ex.navlink {
-  border-left: 0px solid #333;
+.navlink {
+  width: 50px;
+  padding: 0px;
+  z-index: 10;
+  transition: all 0.4s ease-in-out, border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out,border-left 0.3s ease-in-out;
+  margin-left: var(--menu-button-marginsl);
+  margin-right: var(--menu-button-marginsr);
 }
 
+.active {
+  width: var(--menu-button-width);
+  border-top: 3px solid #3232e6;
+  border-bottom: 3px solid #3232e6;
+  margin-left: var(--menu-button-marginsl-active);
+  margin-right: var(--menu-button-marginsr-active);
+  z-index: 100;
+  transition: all 1s ease-in-out;
+}
+
+/* Style the first button to be the starter button */
 #ex.navlink .arrowsvg {
   display: none;
   visibility: hidden;
@@ -62,50 +82,36 @@
   visibility: hidden;
 }
 
-.navlink {
-  width: 50px;
-  z-index: 10;
-  transition: all 0.4s ease-in-out, border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out,border-left 0.3s ease-in-out;
-}
-
-
-.active {
-  width: var(--menu-button-width);
-  border-top: 3px solid #3232e6;
-  border-bottom: 3px solid #3232e6;
-  /* border-left: 3px solid rgb(50, 50, 230); */
-  margin-left: 16px;
-  margin-right: 26px;
-  z-index: 100;
-  transition: all 1s ease-in-out;
-}
-
 #ex.active .startsvg {
   display: none;
   visibility: hidden;
 }
 
-
+/* Style the text in link */
 .navlink .linktext {
   display: none;
   transition: all 1s ease-in-out;
+  text-align: center;
 }
 
 .navlink .EFlinktext {
   display: none;
   transition: all 1s ease-in-out;
+  text-align: center;
 }
 
 /* Style the SVG and SVG elements inside the link */
-
 .navlink .arrowsvg, .navlink .startsvg {
   width: 50px;
   height: 50px;
+  margin: 0px 0px;
+  padding: 0px;
   transition: all 0.5s ease-in-out;
 }
 
 .active .arrowsvg, .active .startsvg {
   position: relative;
+  margin: 0px;
   width: 50px;
   height: 50px;
   top: 0px;
@@ -131,21 +137,16 @@
   top: 0px;
   left: var(--menu-arrowline-left);
   z-index: 100;
-  /* transition: all 1.3s ease-in-out; */
-  /* fill: #ddd; */
   stroke: #ddd;
   margin: 0px;
 }
 
 .navlink polygon {
-  /* fill: #333; */
   stroke: #333;
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
 .navlink polyline {
-  /* fill: #333; */
-  /* stroke: #333; */
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
@@ -155,7 +156,6 @@
 }
 
 /* Style text in link */
-
 .active .linktext {
   position: relative;
   width: 90px;
@@ -163,7 +163,7 @@
   overflow-wrap: normal;
   left: var(--menu-text-left);
   color: #313131;
-  text-align: left;
+  text-align: center;
   word-wrap: normal;
   z-index: 100;
   display: inline;
@@ -176,12 +176,13 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 20px;
+  left: var(--menu-text-left);
   color: #313131;
   text-align: left;
   z-index: 100;
   float: left;
   transition: all 1s ease-in-out;
+  text-align: center;
 }
 
 #ex.active .activelinesvg {
@@ -190,18 +191,17 @@
 }
 
 #ex.active .arrowsvg {
-  left: 31px;
+  left: var(--menu-arrow-left-ex);
 }
 
 /* Change links on hover */
-
 .navlink:hover {
   width: var(--menu-button-width);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 16px;
-  margin-right: 26px;
+  margin-left: var(--menu-button-marginsl);
+  margin-right: var(--menu-button-marginsr-active);
   height: var(--menu-button-height);
   z-index: 100;
   border-top: 3px solid #ddd;
@@ -232,12 +232,11 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 15px;
+  left: var(--menu-text-left);
   color: #313131;
   text-align: center;
   word-wrap: normal;
   z-index: 100;
-  /* float: left; */
 }
 
 .navlink:hover .EFlinktext {
@@ -247,9 +246,9 @@
   width: 90px;
   max-width: 80px;
   overflow-wrap: normal;
-  left: 10px;
+  left: var(--menu-text-left);
   color: #313131;
-  text-align: left;
+  text-align: center;
   z-index: 100;
   float: left;
 }
@@ -306,7 +305,6 @@
   fill: #ddd;
   stroke: #ddd;
   color: #ddd;
-  /* background-color: aqua; */
 }
 
 /* For large screens */
@@ -316,8 +314,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 16px;
-    margin-right: 26px;
+    margin-left: var(--menu-button-marginsl);
+    margin-right: var(--menu-button-marginsr-active);
     z-index: 100;
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
@@ -347,7 +345,7 @@
     overflow-wrap: normal;
     left: var(--menu-text-left);
     color: #313131;
-    text-align: left;
+    text-align: center;
     word-wrap: normal;
     z-index: 100;
     float: left;
@@ -360,9 +358,9 @@
     width: 90px;
     max-width: 80px;
     overflow-wrap: normal;
-    left: 20px;
+    left: var(--menu-text-left);
     color: #313131;
-    text-align: left;
+    text-align: center;
     z-index: 100;
     float: left;
   }
@@ -376,20 +374,8 @@
   }
 
   #ex.navlink .arrowsvg {
-    left: 30px;
+    left: var( --menu-arrow-left-ex);
   }
-  
-  /* .navlink:hover polygon {
-    fill: #ddd;
-    stroke: #ddd;
-  }
-  
-  .navlink:hover .activelinesvg {
-    fill: #ddd;
-    stroke: #ddd;
-    display: none;
-    visibility: hidden;
-  } */
 
   .navlink .activelinesvg {
     fill: transparent;
