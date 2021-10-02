@@ -1,6 +1,6 @@
 :root {
   --menu-font-size: 14px;
-  --menu-button-width: 158px;
+  --menu-button-width: 160px;
   --menu-button-height: 44px;
   --menu-arrow-left: 22px;
   --menu-arrow-left-ex: 31px;
@@ -54,11 +54,6 @@
 }
 
 /* Style the first button to be the starter button */
-#ex.navlink {
-  border-left: 0px solid #333;
-  width: var(--menu-button-width);
-}
-
 #ex.navlink .arrowsvg {
   display: none;
   visibility: hidden;
@@ -389,18 +384,6 @@
   #ex.navlink .arrowsvg {
     left: var( --menu-arrow-left-ex);
   }
-  
-  /* .navlink:hover polygon {
-    fill: #ddd;
-    stroke: #ddd;
-  }
-  
-  .navlink:hover .activelinesvg {
-    fill: #ddd;
-    stroke: #ddd;
-    display: none;
-    visibility: hidden;
-  } */
 
   .navlink .activelinesvg {
     fill: transparent;
