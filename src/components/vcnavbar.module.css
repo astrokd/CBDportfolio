@@ -46,7 +46,6 @@
   width: var(--menu-button-width);
   border-top: 3px solid #3232e6;
   border-bottom: 3px solid #3232e6;
-  /* border-left: 3px solid rgb(50, 50, 230); */
   margin-left: var(--menu-button-marginsl-active);
   margin-right: var(--menu-button-marginsr-active);
   z-index: 100;
@@ -138,21 +137,16 @@
   top: 0px;
   left: var(--menu-arrowline-left);
   z-index: 100;
-  /* transition: all 1.3s ease-in-out; */
-  /* fill: #ddd; */
   stroke: #ddd;
   margin: 0px;
 }
 
 .navlink polygon {
-  /* fill: #333; */
   stroke: #333;
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
 .navlink polyline {
-  /* fill: #333; */
-  /* stroke: #333; */
   transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
@@ -243,7 +237,6 @@
   text-align: center;
   word-wrap: normal;
   z-index: 100;
-  /* float: left; */
 }
 
 .navlink:hover .EFlinktext {
@@ -312,7 +305,6 @@
   fill: #ddd;
   stroke: #ddd;
   color: #ddd;
-  /* background-color: aqua; */
 }
 
 /* For large screens */
