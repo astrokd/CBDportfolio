@@ -1,10 +1,10 @@
 import * as React from "react"
 import VCLayout from '../components/vclayout'
-// import ResearchAreas from '../components/researchareas'
+import ResearchAreas from '../components/researchareas'
 import { graphql } from "gatsby"
 
 // styles
-import { contentStyle, paragraphStyles } from './vc.module.css'
+import { contentStyle } from './vc.module.css'
 
 // export const query = graphql`
 //   query {
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </p>
       <br></br>
-      {/* <ResearchAreas><div dangerouslySetInnerHTML={{ __html: htmlli }} /></ResearchAreas> */}
+      <ResearchAreas></ResearchAreas>
     </VCLayout>
     </>
   )
