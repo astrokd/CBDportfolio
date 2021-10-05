@@ -7,4 +7,4 @@ The Space Resources Value Chain begins with exploration, this involves finding r
 
 - [SAMPLR](https://blog.maxar.com/space-infrastructure/2019/maxar-extends-its-robotic-leadership-to-the-moon?utm_source=maxar.com-robotics-servicing&utm_medium=website)
 - [ELVIS](https://space.mines.edu/curtis-purrington-wins-nasa-nstgro-fellowship-and-challenge-prize/)
-- [Sensing while drilling](https://ascelibrary.org/doi/abs/10.1061/9780784483374.041)
+- [Sensing While Drilling](https://ascelibrary.org/doi/abs/10.1061/9780784483374.041)
