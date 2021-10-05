@@ -6,19 +6,6 @@ import { graphql } from "gatsby"
 // styles
 import { contentStyle } from './vc.module.css'
 
-// export const query = graphql`
-//   query {
-//     allMarkdownRemark {
-//       nodes {
-//         html
-//         frontmatter {
-//           title
-//         }
-//       }
-//     }
-//   }`
-
-
   export const query = graphql`
   query {
     markdownRemark(frontmatter: {title: {eq: "Intro"}}) {
@@ -34,7 +21,6 @@ import { contentStyle } from './vc.module.css'
 // markup
 const IndexPage = ({ data }) => {
   const html = data.markdownRemark.html
-  // const htmlli = data.allMarkdownRemark.nodes[1].html
   return (
     <>
     <VCLayout activelink="Home">
