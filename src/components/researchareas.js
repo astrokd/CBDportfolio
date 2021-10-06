@@ -5,7 +5,6 @@ import { StaticQuery, graphql } from "gatsby"
 import { paragraphStyles } from '../pages/vc.module.css'
 
 const ResearchAreas = ({ data }) => {
-    const html = data
     return (
         <StaticQuery
             query={graphql`
