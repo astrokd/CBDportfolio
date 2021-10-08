@@ -1,21 +1,30 @@
 import * as React from "react"
 import VCLayout from '../components/vclayout'
+import { graphql } from "gatsby"
 
 // styles
 import { linkSpan, contentStyle } from './vc.module.css'
 
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: {title: {eq: "Mine"}}) {
+        html
+        frontmatter {
+          title
+          slug
+          date
+        }
+      }
+  }`
+
 // markup
-const Mine = () => {
+const Mine = ({ data }) => {
+  const html = data.markdownRemark.html
   return (
-    <VCLayout activelink="Mine">
+    <VCLayout activelink={ data.markdownRemark.frontmatter.title }>
         <div className={contentStyle}>
-            <h2 className={linkSpan}>Mine</h2>
-            <p> Mining in space can be defined as “Extraction of naturally occurring substances from space for utilitarian purposes.”.</p>
-            <ul>
-              <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KNg4Th0AAAAJ&citation_for_view=KNg4Th0AAAAJ:sbeIDTyQOFgC" target="_blank" rel="noreferrer noopener">Moon</a></li>
-              <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KNg4Th0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=KNg4Th0AAAAJ:RfUwGJFMQ-0C" target="_blank" rel="noreferrer noopener">Asteroid Optical Mining - working with TransAstra</a></li>
-              <li><a href="https://www.nasa.gov/feature/nasa-awards-500000-in-break-the-ice-lunar-challeng" target="_blank" rel="noreferrer noopener">Break the Ice Challenge - 2nd place team</a></li>
-            </ul>
+            <h2 className={linkSpan}>{ data.markdownRemark.frontmatter.title }</h2>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     </VCLayout>
   )

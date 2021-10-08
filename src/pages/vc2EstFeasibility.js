@@ -23,7 +23,7 @@ const EstFeasibility = ({ data }) => {
   return (
     <VCLayout activelink="EstFeasibility">
         <div className={contentStyle}>
-            <h2 className={linkSpan}>Estabilish Feasibility</h2>
+            <h2 className={linkSpan}>{ data.markdownRemark.frontmatter.title }</h2>
             <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     </VCLayout>
