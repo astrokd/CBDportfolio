@@ -21,9 +21,9 @@ export const query = graphql`
 const Explore = ({ data }) => {
   const html = data.markdownRemark.html
   return (
-    <VCLayout activelink="Explore">
+    <VCLayout activelink={ data.markdownRemark.frontmatter.title }>
         <div className={contentStyle}>
-            <h2 className={linkSpan}>Explore</h2>
+            <h2 className={linkSpan}>{ data.markdownRemark.frontmatter.title }</h2>
             <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     </VCLayout>
