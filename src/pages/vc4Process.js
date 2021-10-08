@@ -1,20 +1,30 @@
 import * as React from "react"
 import VCLayout from '../components/vclayout'
+import { graphql } from "gatsby"
 
 // styles
 import { linkSpan, contentStyle } from './vc.module.css'
 
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: {title: {eq: "Process"}}) {
+        html
+        frontmatter {
+          title
+          slug
+          date
+        }
+      }
+  }`
+
 // markup
-const Process = () => {
+const Process = ({ data }) => {
+  const html = data.markdownRemark.html
   return (
-    <VCLayout activelink="Process">
+    <VCLayout activelink={ data.markdownRemark.frontmatter.title }>
         <div className={contentStyle}>
-            <h2 className={linkSpan}>Process</h2>
-            <p> Process in the Space Resources Value Chain is the production of goods in space using space resources.  This can include parts, spacecraft, fuel, structures, roads, human consumables, and more. Remember that space resources are more than just material resources. Microgravity, vacuum, photons, for example, are also resources that might be used for manufacturing.</p>
-            <ul>
-              <li><a href="https://space.mines.edu/prof-greg-jackson-to-collaborate-on-nasa-project-with-oxeon-energy/" target="_blank" rel="noreferrer noopener">Tipping Point</a></li>
-              <li><a href="https://space.mines.edu/mines-senior-design-team-selected-as-finalist-for-nasa-3d-printed-habitat-challenge/" target="_blank" rel="noreferrer noopener">NASA 3D Printed Habitat Challenge</a></li>
-            </ul>
+            <h2 className={linkSpan}>{ data.markdownRemark.frontmatter.title }</h2>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     </VCLayout>
   )
