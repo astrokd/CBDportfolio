@@ -27,9 +27,9 @@ const Footer = () => {
             <h4>Relavant Links</h4>
             <a href="https://scholar.google.com/citations?hl=en&user=KNg4Th0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer noopener">Google Scholar</a>
             <br></br>
-            <a href="https://www.linkedin.com/in/christopher-dreyer-7843187/">linkedin</a>
+            <a href="https://www.linkedin.com/in/christopher-dreyer-7843187/" target="_blank" rel="noreferrer noopener">linkedin</a>
             <br></br>
-            <a href="https://space.mines.edu/project/dreyer-christopher/">Mines profile</a>
+            <a href="https://space.mines.edu/project/dreyer-christopher/" target="_blank" rel="noreferrer noopener">Mines profile</a>
         </div>
         <div>
             <img
