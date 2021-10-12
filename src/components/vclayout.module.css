@@ -31,6 +31,16 @@
   clear: both;
 }
 
+.logo {
+  color: #5f005f;
+}
+
+.footerBlock {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .footerSection {
   display: inline-block;
   text-align: left;
@@ -41,7 +51,9 @@
   height: auto;
 }
 
-.footerStyles
+.footerSection:last-of-type {
+  text-align: right;
+}
 
 .contactStyle {
   display: inline;

@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import { graphql } from "gatsby"
 
 // styles
-// import { contentStyle } from './vc.module.css'
 
 export const query = graphql`
   query {
