@@ -83,6 +83,13 @@
   transition-timing-function: ease-out;
 }
 
+.burger {
+  display: none;
+  visibility: hidden;
+  text-align: right;
+  transition: all 1s ease-in-out;
+}
+
 .aLinks:hover,
 .aLinks:focus,
 .aLinks:active {
@@ -93,11 +100,15 @@
 
 @media all and (max-width: 680px) { 
   .linkStyles {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .aLinks {
-    width: 95px;
-    font-size: 10px;
+    display: none;
+    visibility: hidden;
+  }
+  .burger {
+    display: initial;
+    visibility: visible;
   }
   .headingStyles {
     max-Width: 320px;
