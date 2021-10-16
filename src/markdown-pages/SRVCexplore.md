@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/explore"
 date: "2021-10-04"
 title: "Explore"

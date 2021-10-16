@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/estfeasibility"
 date: "2021-10-06"
 title: "Estabilish Feasibility"

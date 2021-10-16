@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/distribution"
 date: "2021-10-08"
 title: "Distribution"

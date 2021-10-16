@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/sell"
 date: "2021-10-08"
 title: "Sell"

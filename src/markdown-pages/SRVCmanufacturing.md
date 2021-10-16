@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/manufacturing"
 date: "2021-10-06"
 title: "Manufacturing"
