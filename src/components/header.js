@@ -22,10 +22,12 @@ const Header = () => {
         </div>
         <nav className={linkStyles}>
           <button className={burger}><Burger /></button>
-          <Link className={aLinks} id="home" to="/">Home</Link>
-          <Link className={aLinks} id="bio" to="/bio">Bio</Link>
-          <Link className={aLinks} id="pub" to="/publications">Publications</Link>
-          <Link className={aLinks} id="stu" to="/students">Students</Link>
+          <ul>
+            <Link className={aLinks} id="home" to="/">Home</Link>
+            <Link className={aLinks} id="bio" to="/bio">Bio</Link>
+            <Link className={aLinks} id="pub" to="/publications">Publications</Link>
+            <Link className={aLinks} id="stu" to="/students">Students</Link>
+          </ul>
         </nav>
       </header>
     )
