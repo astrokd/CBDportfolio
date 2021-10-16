@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 // styles
@@ -13,6 +13,7 @@ const Burger = () => {
 }
 
 const Header = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
     return (
       <header>
         <div className={headingStyles}>
@@ -20,11 +21,13 @@ const Header = () => {
           <h3>Professor of Practice, Mechanical Engineering</h3>
         </div>
         <nav className={linkStyles}>
-          <div className={burger}><Burger /></div>
-          <Link className={aLinks} id="home" to="/">Home</Link>
-          <Link className={aLinks} id="bio" to="/bio">Bio</Link>
-          <Link className={aLinks} id="pub" to="/publications">Publications</Link>
-          <Link className={aLinks} id="stu" to="/students">Students</Link>
+          <button className={burger}><Burger /></button>
+          <ul>
+            <Link className={aLinks} id="home" to="/">Home</Link>
+            <Link className={aLinks} id="bio" to="/bio">Bio</Link>
+            <Link className={aLinks} id="pub" to="/publications">Publications</Link>
+            <Link className={aLinks} id="stu" to="/students">Students</Link>
+          </ul>
         </nav>
       </header>
     )

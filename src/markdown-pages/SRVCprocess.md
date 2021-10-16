@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/process"
 date: "2021-10-06"
 title: "Process"

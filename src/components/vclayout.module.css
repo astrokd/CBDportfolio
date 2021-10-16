@@ -63,6 +63,11 @@
   float: right;
   margin-right: 18px;
   margin-top: 10px;
+}
+
+.linkStyles ul{
+  margin-right: 18px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }

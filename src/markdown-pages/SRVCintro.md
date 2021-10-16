@@ -1,4 +1,5 @@
 ---
+type: "SRVC"
 slug: "/intro"
 date: "2021-09-23"
 title: "Intro"
