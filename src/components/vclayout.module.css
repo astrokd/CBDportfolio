@@ -61,15 +61,14 @@
 
 .linkStyles {
   float: right;
-  margin-right: 18px;
+  margin-right: 16px;
   margin-top: 10px;
 }
 
-.linkStyles ul{
-  margin-right: 18px;
-  margin-top: 10px;
+.links{
   display: flex;
   flex-direction: column;
+  padding: 0px;
 }
 
 .aLinks {
@@ -103,7 +102,7 @@
 }
 
 
-@media all and (max-width: 680px) { 
+@media all and (max-width: 720px) { 
   .linkStyles {
     margin-right: 10px;
   }

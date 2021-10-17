@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 // styles
-import { headingStyles, linkStyles, aLinks, burger } from './vclayout.module.css'
+import { headingStyles, linkStyles, aLinks, burger, links } from './vclayout.module.css'
 
 const Burger = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
         <nav className={linkStyles}>
           <button className={burger}><Burger /></button>
-          <ul>
+          <ul className={links}>
             <Link className={aLinks} id="home" to="/">Home</Link>
             <Link className={aLinks} id="bio" to="/bio">Bio</Link>
             <Link className={aLinks} id="pub" to="/publications">Publications</Link>
