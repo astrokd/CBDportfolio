@@ -118,11 +118,13 @@
     visibility: hidden;
   }
   .headermenu{
-    display: initial;
     visibility: visible;
-    position: relative;
-    width: 50px;
-    height: 80px;
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+
   }
   .burger {
     display: initial;

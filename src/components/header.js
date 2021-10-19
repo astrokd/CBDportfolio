@@ -32,6 +32,7 @@ class Header extends React.Component {
   }
 
   handleClick() {
+    console.log("in handleClick")
     this.setState({
       navbaropen: !this.state.navbaropen,
     });
@@ -45,7 +46,7 @@ class Header extends React.Component {
           <h3>Professor of Practice, Mechanical Engineering</h3>
         </div>
         <nav className={linkStyles}>
-          <div className={burger} onMyClick={() => this.handleClick()}> { this.state.navbaropen ? <HeaderNav class={headermenu}/> : <Burger /> } </div>
+          <div className={burger}> { this.state.navbaropen ? <HeaderNav class={headermenu}/> : <Burger onMyClick={() => this.handleClick()} /> } </div>
             <HeaderNav class={links}/>
         </nav>
       </header>
