@@ -71,6 +71,13 @@
   padding: 0px;
 }
 
+.headermenu{
+  display: none;
+  visibility: hidden;
+  width: 50px;
+  height: 80px;
+}
+
 .aLinks {
   width: 110px;
   margin: 3px 3px;
@@ -106,9 +113,18 @@
   .linkStyles {
     margin-right: 10px;
   }
-  .aLinks {
+  .links {
     display: none;
     visibility: hidden;
+  }
+  .headermenu{
+    visibility: visible;
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+
   }
   .burger {
     display: initial;
