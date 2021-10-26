@@ -74,8 +74,8 @@
 .headermenu{
   display: none;
   visibility: hidden;
-  width: 50px;
-  height: 80px;
+  /* width: 100px;
+  height: 80px; */
 }
 
 .aLinks {
@@ -111,7 +111,7 @@
 
 @media all and (max-width: 720px) { 
   .linkStyles {
-    margin-right: 10px;
+    margin-right: 0px;
   }
   .links {
     display: none;
@@ -120,11 +120,16 @@
   .headermenu{
     visibility: visible;
     position: absolute;
-    right: 120px;
+    right: 25px;
     top: 10px;
     display: flex;
     flex-direction: column;
-
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+    /* border: 1px solid #111111;
+    border-radius: 5px; */
+    /* width: auto;
+    height: auto; */
   }
   .burger {
     display: initial;
