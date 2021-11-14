@@ -17,3 +17,5 @@ The Space Resources Value Chain begins with Explore(EX), followed by Establish F
 - [Manufacture: MF >](/vc5Manufacturing)
 - [Distribution: DS >](/vc6Distribution)
 - [Sell: SL >](/vc7Sell)
+
+![What are Space Resources]( ../images/WhatAreSpaceResources.png )
