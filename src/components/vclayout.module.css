@@ -55,6 +55,10 @@
   height: auto;
 }
 
+.footerSection:nth-child(2) {
+  text-align: center;
+}
+
 .footerSection:last-of-type {
   text-align: right;
 }

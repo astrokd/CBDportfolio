@@ -45,3 +45,9 @@ h2 {
   display: block;
   clear: both;
 }
+
+@media all and (max-width: 960px) { 
+  .contentStyle {
+    width: 95%;
+  }
+}
