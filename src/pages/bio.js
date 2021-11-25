@@ -30,10 +30,10 @@ const BioPage = ({ data }) => {
   return (
     <>
     <Layout title="Bio">
-      <p className={contentStyle}>
+      <div className={contentStyle}>
         <MugShot></MugShot>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </p>
+      </div>
     </Layout>
     </>
   )
