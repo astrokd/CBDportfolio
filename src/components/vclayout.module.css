@@ -16,6 +16,7 @@
 .headingStyles {
   margin-Top: 0;
   margin-Bottom: 32px;
+  min-width: 200px;
   max-Width: 520px;
   display: inline-block;
 }
@@ -105,6 +106,7 @@
 
 .burger {
   display: none;
+  width: auto;
   visibility: hidden;
   text-align: right;
   transition: all 1s ease-in-out;
@@ -151,6 +153,6 @@
     visibility: visible;
   }
   .headingStyles {
-    max-Width: 320px;
+    max-Width: 250px;
   }
 }
