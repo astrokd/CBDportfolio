@@ -6,7 +6,6 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.5s;
-  /* font-Family: "-apple-system, Roboto, sans-serif"; */
 }
 
 .navStyle {
@@ -111,6 +110,10 @@
   transition: all 1s ease-in-out;
 }
 
+.menu {
+  position: relative;
+}
+
 .aLinks:hover,
 .aLinks:focus,
 .aLinks:active {
@@ -139,7 +142,9 @@
     flex-direction: column;
     background-color: #fff;
     transition: all 1s ease-in-out;
-
+  }
+  .closeButton{
+    position: absolute;
   }
   .burger {
     display: initial;
