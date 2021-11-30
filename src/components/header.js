@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import { Link } from 'gatsby'
 
 // styles
@@ -12,6 +12,14 @@ const Burger = (props) => {
   )
 }
 
+const Close = (props) => {
+  return (
+    <button onClick={props.onMyClick}>
+       <svg viewBox="0 0 24 24" width="32px" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  )
+}
+
 const HeaderNav = (props) => {
   return (
     <ul className={props.class}>
@@ -19,9 +27,13 @@ const HeaderNav = (props) => {
         <Link className={aLinks} id="bio" to="/bio">Bio</Link>
         <Link className={aLinks} id="pub" to="/publications">Publications</Link>
         <Link className={aLinks} id="stu" to="/students">Students</Link>
+        { props.Children }
     </ul>
   )
 }
+
+{/* <HeaderNav class={links} />
+<Close class={links} onMyClick={() => this.handleClick()} /> */}
 
 class Header extends React.Component {
   constructor(props) {
@@ -46,29 +58,12 @@ class Header extends React.Component {
           <h3>Professor of Practice, Mechanical Engineering</h3>
         </div>
         <nav className={linkStyles}>
-          <div className={burger}> { this.state.navbaropen ? <HeaderNav class={headermenu}/> : <Burger onMyClick={() => this.handleClick()} /> } </div>
-            <HeaderNav class={links}/>
+          <div className={burger}> { this.state.navbaropen ? <div><Close onMyClick={() => this.handleClick()} /><HeaderNav class={headermenu}></HeaderNav></div> : <Burger onMyClick={() => this.handleClick()} /> } </div>
+          <HeaderNav class={links} />
         </nav>
       </header>
     )
   }
 }
-
-// const Header = () => {
-//     return (
-//       <header>
-//         <div className={headingStyles}>
-//           <h1> Christopher Dreyer</h1>
-//           <h3>Professor of Practice, Mechanical Engineering</h3>
-//         </div>
-//         <nav className={linkStyles}>
-//           <button className={burger}><Burger /></button>
-//           <ul className={links}>
-//             <HeaderNav />
-//           </ul>
-//         </nav>
-//       </header>
-//     )
-//   }
 
   export default Header
