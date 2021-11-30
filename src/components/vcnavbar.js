@@ -29,7 +29,7 @@ const Chevron = ({ children, linkpath, linkstyle, abbr, linktext, idname }) => {
 
 const VCNavBar = (props) => {
   return (
-    <div className={topnav}>
+    <nav className={topnav}>
       <Chevron idname={ex} linkpath="/vc1Explore" linkstyle={(props.activelink === "Explore") ? active : navlink} linktext={linktext} abbr={'EX'}>Explore</Chevron>
       <Chevron linkpath="/vc2EstFeasibility" linkstyle={(props.activelink === "EstFeasibility") ? active : navlink} linktext={EFlinktext} abbr={'EF'}>Establish Feasibility</Chevron>
       <Chevron linkpath="/vc3Mine" linkstyle={(props.activelink === "Mine") ? active : navlink} linktext={linktext} abbr={'MN'}>Mine</Chevron>
@@ -37,7 +37,7 @@ const VCNavBar = (props) => {
       <Chevron linkpath="/vc5Manufacturing" linkstyle={(props.activelink === "Manufacturing") ? active : navlink} linktext={linktext} abbr={'MF'}>Manufacturing</Chevron>
       <Chevron linkpath="/vc6Distribution" linkstyle={(props.activelink === "Distribution") ? active : navlink} linktext={linktext} abbr={'DS'}>Distribution</Chevron>
       <Chevron linkpath="/vc7Sell" linkstyle={(props.activelink === "Sell") ? active : navlink} linktext={linktext} abbr={'SL'}>Sell</Chevron>
-    </div>
+    </nav>
   )
 }
 
