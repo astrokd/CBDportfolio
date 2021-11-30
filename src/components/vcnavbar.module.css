@@ -16,7 +16,7 @@
 .topnav {
   height: 65px;
   margin-bottom: 10px;
-  clear:both;
+  clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,5 +390,38 @@
     fill: #ddd;
     stroke: #ddd;
     color: #ddd;
+  }
+}
+
+/* For small screens */
+@media all and (max-width: 540px) { 
+  .active {
+    width: 50px;
+    padding: 0px;
+    border: none;
+    margin-left: var(--menu-button-marginsl);
+    margin-right: var(--menu-button-marginsr);
+  }
+  .active .activelinesvg {
+    display: none;
+    visibility: hidden;
+  }
+  .active .linktext, .active .EFlinktext{
+    display: none;
+    visibility: hidden;
+  }
+  .active .arrowsvg, #ex.active .startsvg{
+    margin: 0px 0px;
+    padding: 0px;
+    left: 0;
+    display: initial;
+    visibility: visible;
+  }
+  #ex.active {
+    border-left: none;
+  }
+  #ex.active .arrowsvg {
+    display: none;
+    visibility: hidden;
   }
 }
