@@ -1,3 +1,5 @@
+/* layout - pageStyles, paragraphStyles */
+/* vclayout - pageStyles, paragraphStyles, navStyle */
 
 .pageStyles {
   color: "#232129";
@@ -8,10 +10,18 @@
   transition: all 0.5s;
 }
 
+.paragraphStyles {
+  margin-Bottom: 32px;
+  display: block;
+  float:left;
+}
+
 .navStyle {
   margin: 0 auto;
   text-align: center;
 }
+
+/* header - headingStyles, linkStyles, aLinks, burger, links, headermenu, closeButton, menu */
 
 .headingStyles {
   margin-Top: 0;
@@ -28,49 +38,10 @@
   display: block;
   float:left;
 }
-.footerStyles {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  clear: both;
-}
-
-.logo {
-  margin: 15px;
-  color: #5f005f;
-}
-
-.footerBlock {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.footerSection {
-  display: inline-block;
-  text-align: left;
-  margin: 0 auto;
-  padding: 0 5px;
-  width: 28%;
-  min-width: 120px;
-  height: auto;
-}
-
-.footerSection:nth-child(2) {
-  text-align: center;
-}
-
-.footerSection:last-of-type {
-  text-align: right;
-}
-
-.contactStyle {
-  display: inline;
-}
 
 .linkStyles {
   float: right;
-  margin-right: 16px;
+  margin-right: 0px;
   margin-top: 10px;
   transition: all 0.5s;
 }
@@ -80,6 +51,7 @@
   flex-direction: column;
   padding: 2px;
   transition: all 0.5s;
+  margin-right: 0px;
 }
 
 .headermenu{
@@ -123,7 +95,45 @@
   background-color: #333;
 }
 
+/* footer - footerStyles, footerSection, footerBlock, logo  */
 
+.footerStyles {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  clear: both;
+}
+
+.logo {
+  margin: 15px;
+  color: #5f005f;
+}
+
+.footerBlock {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.footerSection {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 28%;
+  min-width: 120px;
+  height: auto;
+}
+
+.footerSection:nth-child(2) {
+  text-align: center;
+}
+
+.footerSection:last-of-type {
+  text-align: right;
+}
+
+/* smaller screen styling */
 @media all and (max-width: 780px) { 
   .pageStyles {
     width: 95%;
