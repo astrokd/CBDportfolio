@@ -424,4 +424,58 @@
     display: none;
     visibility: hidden;
   }
+  /* Change links on hover */
+  .navlink:hover {
+    width: 50px;
+    padding: 0px;
+    border: none;
+    margin-left: var(--menu-button-marginsl);
+    margin-right: var(--menu-button-marginsr);
+  }
+  #ex.navlink:hover {
+    border-left: none;
+  }
+  #ex.navlink:hover .startsvg {
+    display: none;
+    visibility: hidden;
+  }
+  #ex.navlink:hover .arrowsvg{
+    display: initial;
+    visibility: visible;
+    left: 31px;
+  }
+  #ex.navlink:hover .activelinesvg{
+    display: none;
+    visibility: hidden;
+  }
+  .navlink:hover .linktext {
+    display: none;
+    visibility: hidden;
+  }
+  .navlink:hover .EFlinktext {
+    display: none;
+    visibility: hidden;
+  }
+  .navlink:hover .arrowsvg, .navlink:hover .startsvg {
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+  }
+  .navlink:hover polygon {
+    fill: #ddd;
+    stroke: #ddd;
+  }
+  .navlink:hover .activelinesvg {
+    display: none;
+    visibility: hidden;
+  }
+  .navlink:hover text{
+    fill: #333;
+    stroke: #333;
+    color: #333;
+  } 
 }
