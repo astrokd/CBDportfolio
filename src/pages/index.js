@@ -19,7 +19,7 @@ import { contentStyle } from './vc.module.css'
   }`
 
 // markup
-const IndexPage = ({ data }) => {
+const Index = ({ data }) => {
   const html = data.markdownRemark.html
   return (
     <>
@@ -34,4 +34,4 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default Index

@@ -4,8 +4,11 @@
   "private": true,
   "description": "CBDportfolio",
   "author": "Kevin Dreyer",
+  "license": "MIT",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "jest"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -33,6 +36,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^12.1.2",
     "babel-jest": "^27.4.2",
     "babel-preset-gatsby": "^2.3.0",
