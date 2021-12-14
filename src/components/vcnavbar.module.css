@@ -413,7 +413,7 @@
   .active .arrowsvg, #ex.active .startsvg{
     margin: 0px 0px;
     padding: 0px;
-    left: 0;
+    left: 0px;
     display: initial;
     visibility: visible;
   }
@@ -438,11 +438,12 @@
   #ex.navlink:hover .startsvg {
     display: none;
     visibility: hidden;
+    left: 0px;
   }
   #ex.navlink:hover .arrowsvg{
     display: initial;
     visibility: visible;
-    left: 31px;
+    left: 0px;
   }
   #ex.navlink:hover .activelinesvg{
     display: none;
@@ -460,7 +461,7 @@
     position: relative;
     margin: 0px 0px;
     padding: 0px;
-    left: 0;
+    left: 0px;
     width: 50px;
     height: 50px;
     z-index: 100;
